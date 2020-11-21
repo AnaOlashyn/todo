@@ -1,0 +1,2 @@
+<input class="todo-input" #inputElementRef [value]="title" (keyup.enter)="changeTitle($event.target.value)">
+<button class="btn" (click)="changeTitle(inputElementRef.value)">Save</button>
